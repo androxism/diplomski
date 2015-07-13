@@ -1,0 +1,131 @@
+*
+{
+    cursor: url("../images/cursor.png"), auto;
+}
+body,html{
+    margin: 0 auto;
+    padding:0;
+    height:100%;
+    background-color: black;
+    background: url("../images/pozadina.jpg") no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.center{
+    position: relative;
+    width: 650px;
+    text-align:center;
+    margin:0 auto;
+}
+.center-inner{
+    position: relative;
+    width:100%;
+    height: 480px;
+    z-index: 999;
+    background: url("../images/tabla.png") no-repeat;
+}
+#kreni{
+    width:120px;
+    height:132px;
+    border:none;
+    margin-top: -30px;
+    background: url("../images/kreni.png");
+    background-position: 120px 264px;
+    -moz-animation: 3s ease 0s normal none infinite swing;
+    -moz-transform-origin: center top;
+    -webkit-animation:swing 3s infinite ease-in-out;
+    -webkit-transform-origin:top;
+}
+#kreni:hover{
+    background-position: 120px 133px;
+}
+@-moz-keyframes swing{
+    0%{-moz-transform:rotate(-3deg)}
+    50%{-moz-transform:rotate(3deg)}
+    100%{-moz-transform:rotate(-3deg)}
+}
+@-webkit-keyframes swing{
+    0%{-webkit-transform:rotate(-3deg)}
+    50%{-webkit-transform:rotate(3deg)}
+    100%{-webkit-transform:rotate(-3deg)}
+}
+#inner{
+    position: relative;
+    width:100%;
+    height:270px;
+    padding-top: 120px;
+}
+#inner-username{
+    position: relative;
+    height:85px;
+}
+#inner-username input {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top:115px;
+    left:280px;
+    height:25px;
+    width:200px;
+}
+#inner-username input:focus, input {
+    outline: 0;
+    font-size: 15px;
+    color:white;
+    text-align: center;
+}
+#inner-password{
+    position: relative;
+    margin-top: 82px;
+    height:95px;
+}
+#inner-password input {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top:115px;
+    left:280px;
+    height:25px;
+    width:200px;
+}
+::-webkit-input-placeholder {
+    opacity: 0.5;
+    -webkit-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+:-moz-placeholder {
+    opacity: 0.5;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+::-moz-placeholder {
+    opacity: 0.5;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+:-ms-input-placeholder {  
+    opacity: 0.5;
+    -ms-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+
+:focus::-webkit-input-placeholder {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+:focus:-moz-placeholder {
+    opacity: 0;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+:focus::-moz-placeholder {
+    opacity: 0;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+:focus:-ms-input-placeholder {  
+    opacity: 0;
+    -ms-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
